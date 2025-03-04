@@ -1,16 +1,28 @@
-# expense_tracker
+# Expense Tracker App
 
-A new Flutter project.
+This is a Flutter-based Personal Expense Tracker App that allows users to log and track their daily expenses. It includes a reminder notification feature to encourage users to record their expenses.
 
-## Getting Started
+## Features
+- Log your name and phone number to generate a unique user ID.
+- Log daily expenses with categories and amounts.
+- Daily reminder notifications for expense recording.
+- Toggle reminders on and off in the settings page.
+- View, edit, and remove recorded expenses.
+- Display an expense list and sort it by date range in Expense list page.
+- View expenses by week, month, or specific category in the expense history page.
+- View user profile in profile section 
 
-This project is a starting point for a Flutter application.
+## Setup and Running Instructions
 
-A few resources to get you started if this is your first Flutter project:
+### Prerequisites
+- Flutter SDK installed on your machine.
+- Android Studio or VS Code for Flutter development.
+- An Android device or emulator for testing.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Installation
+1. Clone this repository to your local machine:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+   ```bash
+   git clone https://github.com/Suhairayousuf/expense_tracker.git  
+   cd expense_tracker  
+
