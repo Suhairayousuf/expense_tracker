@@ -40,7 +40,7 @@ class _SignInPageState extends State<SignInPage> with TickerProviderStateMixin {
     await prefs.setString('name', name); // Store phone number as userId
     setState(() {
       globalUserId = phoneNumber; // Store globally
-      userName = phoneNumber; // Store globally
+      userName = name; // Store globally
     });
   }
 

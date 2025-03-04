@@ -27,6 +27,7 @@ class _RoutingPageState extends State<RoutingPage> {
   Future<void> _initializeUserId() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     globalUserId = prefs.getString('userId');  // Get the user ID from SharedPreferences
+    userName = prefs.getString('userName');  // Get the user ID from SharedPreferences
 
     if (globalUserId == null) {
       // If no user ID exists, navigate to the SignInPage

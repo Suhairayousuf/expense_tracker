@@ -1,3 +1,4 @@
+import 'package:expense_tracker/core/pallette/pallete.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
@@ -76,7 +77,14 @@ class _SettingsPageState extends State<SettingsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Settings'),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back, color: Colors.white),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+        backgroundColor: primaryColor,
+        title: Text('Settings',style: TextStyle(color: Colors.white),),
       ),
       body: ListView(
         padding: EdgeInsets.all(16.0),

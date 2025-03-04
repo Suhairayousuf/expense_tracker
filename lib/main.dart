@@ -4,18 +4,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 
 import 'core/common/functions.dart';
-import 'features/auth/sign_in.dart';
-import 'features/home/navigation_page.dart';
-FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
-FlutterLocalNotificationsPlugin();
-Future<void> main() async {
-  WidgetsFlutterBinding.ensureInitialized();
 
-  var androidSettings = AndroidInitializationSettings(ImageConstants.splashIcon);
-  var initializationSettings = InitializationSettings(
-    android: androidSettings,
-  );
-  await flutterLocalNotificationsPlugin.initialize(initializationSettings);
+
+Future<void> main() async {
+  // WidgetsFlutterBinding.ensureInitialized();
+  //
+  // var androidSettings = AndroidInitializationSettings('app_icon');
+  // var initializationSettings = InitializationSettings(
+  //   android: androidSettings,
+  // );
+  // await flutterLocalNotificationsPlugin.initialize(initializationSettings);
 
   runApp(const MyApp());
 }
@@ -29,6 +27,8 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
+  FlutterLocalNotificationsPlugin();
 
   // This widget is the root of your application.
   @override
