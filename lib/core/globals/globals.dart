@@ -1,0 +1,2 @@
+String? globalUserId;
+String? userName;
